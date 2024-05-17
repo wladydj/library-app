@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import LibraryRouter from './router/LibraryRouter';
+import { LibraryContext } from './context/LibraryContext'
+import Footer from './components/Footer';
+import { useBooks } from './hooks/useBooks';
 
 function App() {
+
+  const books = useBooks();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <LibraryContext.Provider value={{books}}>
+        <LibraryRouter></LibraryRouter>
+        <Footer />
+      </LibraryContext.Provider>
   );
 }
 

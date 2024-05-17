@@ -1,0 +1,52 @@
+.divider {
+    height: 280px;
+}
+
+.card {
+    height: 400px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.card__img {
+    height: 100%;
+    width: auto;
+}
+
+.card__text {
+    text-align: center;
+    padding: 40px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+.card__text--name .card__text--author{
+    font-size: 1.3rem;
+}
+
+.card__text--year_publication {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+.card__text--synopsis .card__text--critics {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+.book-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+.rental-form {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+textarea {
+    width: 610px;
+    height: 170px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22.5px;
+}
